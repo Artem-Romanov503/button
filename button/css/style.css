@@ -1,0 +1,16 @@
+.btn{
+    position: relative;
+    top: 100px;
+    left: 45%;
+    border-style: none;
+    background-color: blueviolet;
+    width: 150px;
+    height: 50px;
+    color: aliceblue;
+}
+.num{
+    position: relative;
+    top: 200px;
+    left: 50%;
+    font-size: 30px;
+}

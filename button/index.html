@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+window.onload = function() {
+    var button = document.getElementById('button_back_change');
+    var body = document.getElementsByTagName('body')[0];
+    var colors = ['blue', 'grey', 'white', 'red', 'green', 'orange', 'rgb(221, 33, 143)','rgb(214, 228, 28)','rgb(9, 116, 18)'];
+    var div = document.getElementById('div');
+    function Random (){
+    var max = 100;
+    return Math.round(Math.random() * max );
+    }
+    button.onclick = function() {
+        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        div.innerHTML = Random();
+    };
+};
+</script>
+</head>
+<body>
+    <input class="btn" type="button" id="button_back_change" value="Нажми на меня"/>
+    <div class="num" id="div"></div>
+</body>
+</html>
